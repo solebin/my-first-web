@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        a {color:aqua;text-decoration:underline;}
+        .middle{color:brown;text-decoration: none;}
+        h1{text-align: center; border-width:5px; border-color:aquamarine; border-style: solid;
+        padding:20px; margin:20px;}
+        img {border-width:5px; border-color:black; border-style: solid;}
+        div {
+            border: 5px solid rgb(196, 97, 97);
+            display: grid;
+            grid-template-columns: 100px 1fr;
+        }
+        #gri{
+            border: 5px solid pink;
+        }
+        @media(max-width:700px){
+            #gri{
+                display: none;
+            }
+        }
+    
+    </style>
+    <title>web-html</title>
+    <meta charset="utf-8">
+    
+</head>
+<body>
+ <h1>나를 소개합니다</h1>
+ <br>
+ <ol>
+     <h3>중학교</h3>
+     <li><h3>경연중학교</h3></li>
+     <img src="images.jpeg" width="200">
+    <br>
+     <h3>고등학교</h3>
+     <li><h3>청라고등학교</h3></li>
+     <img src="청라.jpeg" width="200">
+    <br>
+     <li><h3>수학동아리 NOTA 회장</h3></li>
+     <img src="노타.png" width="200">
+     <br>
+ </ol>
+
+<div id="gri">
+    <div>dhvbjbsnd</div>
+    <div>hidbis</div>
+</div>
+
+ <br>
+ <h3>참고 자료</h3>
+ <ul>
+     <li><a href="https://m.search.naver.com/search.naver?sm=mtp_sug.top&where=m&query=%EA%B2%BD%EC%97%B0%EC%A4%91%ED%95%99%EA%B5%90&acq=%EA%B2%BD%EC%97%B0%EC%A4%91&acr=2&qdt=0" title="경연중학교" target="_blank" class="middle" >경연중학교</a></li>
+     <li><a href="https://m.search.naver.com/search.naver?sm=mtb_sug.top&where=m&ssc=tab.m.all&oquery=%EA%B2%BD%EC%97%B0%EC%A4%91%ED%95%99%EA%B5%90&tqi=ipUdUlprfQ4ssgHndTossssssRR-506484&query=%EC%B2%AD%EB%9D%BC%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90&acq=cjdfkrh&acr=1&qdt=0" title="청라고등학교" target="_blank">청라고등학교</a></li>
+     <li>NOTA</li>
+  </ul>
+  <h4>thank you</h4> 
+  <input type="button" value="day" onclick="
+  
+  if(document.querySelector('body').dataset.mode === 'night'){
+    document.querySelector('body').style.backgroundColor = 'white'
+    document.querySelector('body').style.color='black'
+    document.querySelector('body').dataset.mode='day'
+    this.value='day'
+}
+else{document.querySelector('body').style.backgroundColor = 'black'
+    document.querySelector('body').style.color='white'
+    document.querySelector('body').dataset.mode='night'
+    this.value='night'}
+
+
+  ">
+  
+</body>
+
+</html>
